@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'KingSejongInstitute';
+	src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Ksif/KingSejongInstitute-Bold.woff2')
+		format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@layer base {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+
+		@apply text-ju_md;
+		@apply font-sejong;
+	}
+	html {
+		font-size: 62.5%;
+		@apply bg-ju_blue-5;
+	}
+	h1 {
+		@apply text-ju_3xl;
+	}
+	h2 {
+		@apply text-ju_2xl;
+	}
+	h3 {
+		@apply text-ju_xl;
+	}
+	h4 {
+		@apply text-ju_lg;
+	}
+	ul,
+	li {
+		list-style: none;
+	}
+	button {
+		@apply border-none outline-none;
+	}
+
+	input {
+		@apply outline-none;
+	}
+}
